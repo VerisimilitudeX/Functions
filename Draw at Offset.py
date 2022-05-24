@@ -3,13 +3,13 @@ LESSON: 6.1 - Functions
 TECHNIQUE 3: Draw at Offset
 DEMO
 """
-
+#
 #### ---- LIBRARIES ---- ####
 import tsk
 import pygame
 pygame.init()
-
-
+#
+#
 #### ---------------------- ####
 #### ---- DRAW SPRITES ---- ####
 #### ---------------------- ####
@@ -19,8 +19,8 @@ def draw_sprites(x, y):
 
     panda.center_x = x
     panda.center_y = y
-    puffin.center_x = -20
-    puffin.center_y = -280
+    puffin.center_x = -20 + x
+    puffin.center_y = -280 + y
 
     panda.draw()
     puffin.draw()
