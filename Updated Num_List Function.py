@@ -38,4 +38,4 @@ while val != "done":
 # Call sum_list function here
 amount = sum_list(nums)
 print()
-print("FINAL TOTAL: ", str(amount))
+print("FINAL TOTAL: " + str(amount))
