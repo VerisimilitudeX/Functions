@@ -1,14 +1,7 @@
-"""
-LESSON: 6.1 - Functions
-TECHNIQUE 4: Function Calls in Functions
-DEMO
-"""
-
 #### ---- LIBRARIES ---- ####
 import random
 import pygame
 pygame.init()
-
 
 #### ----------------------------- ####
 #### ---- PRINT FAVS FUNCTION ---- ####
@@ -17,7 +10,6 @@ def print_favs(names, foods):
     for i in range(len(names)):
         print(names[i] + ": " + foods[i])
 
-
 #### ------------------------------- ####
 #### ---- PRINT SCORES FUNCTION ---- ####
 #### ------------------------------- ####
@@ -25,7 +17,6 @@ def print_scores(foods):
     unique_food_list = []
     food_scores = []
 
-    # Calculate scores
     for i in range(len(foods)):
         if not (foods[i] in unique_food_list):
             unique_food_list.append(foods[i])
@@ -34,10 +25,8 @@ def print_scores(foods):
             position = unique_food_list.index(foods[i])
             food_scores[position] += 1
 
-    # Display scores
     for i in range(len(unique_food_list)):
         print(unique_food_list[i] + ": " + str(food_scores[i]))
-
 
 #### ------------------------------- ####
 #### ---- PRINT WINNER FUNCTION ---- ####
@@ -46,7 +35,6 @@ def print_winner(foods):
     unique_food_list = []
     food_scores = []
 
-    # Calculate scores
     for i in range(len(foods)):
         if not (foods[i] in unique_food_list):
             unique_food_list.append(foods[i])
@@ -55,7 +43,6 @@ def print_winner(foods):
             position = unique_food_list.index(foods[i])
             food_scores[position] += 1
 
-    # Display scores
     max_score = 0
     most_popular = ""
     for i in range(len(food_scores)):
