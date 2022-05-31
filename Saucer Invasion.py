@@ -1,6 +1,5 @@
 #### ---- LIBRARIES ---- ####
 import tsk
-
 import pygame
 pygame.init()
 
