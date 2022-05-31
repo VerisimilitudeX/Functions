@@ -1,9 +1,3 @@
-"""
-LESSON: 6.1 - Functions
-TECHNIQUE 2: Flags
-DEMO
-"""
-
 #### ---- LIBRARIES --- ####
 import tsk
 import random
@@ -25,21 +19,17 @@ def draw_bee(direction):
 #### ---------------------- ####
 #### ---- MAIN PROGRAM ---- ####
 #### ---------------------- ####
-# Setup
 w = pygame.display.set_mode([1018, 573])
 background = tsk.Sprite("OutdoorBushes.jpg", 0, 0)
 background.draw()
 
-# Main loop
 drawing = True
 while drawing:
 
-    # Event loop
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             drawing = False
 
-        # Key presses
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
                 draw_bee("left")
