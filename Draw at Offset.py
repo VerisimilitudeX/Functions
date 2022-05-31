@@ -1,15 +1,8 @@
-"""
-LESSON: 6.1 - Functions
-TECHNIQUE 3: Draw at Offset
-DEMO
-"""
-#
 #### ---- LIBRARIES ---- ####
 import tsk
 import pygame
 pygame.init()
-#
-#
+
 #### ---------------------- ####
 #### ---- DRAW SPRITES ---- ####
 #### ---------------------- ####
@@ -25,7 +18,6 @@ def draw_sprites(x, y):
     panda.draw()
     puffin.draw()
 
-
 #### ---------------------- ####
 #### ---- MAIN PROGRAM ---- ####
 #### ---------------------- ####
@@ -38,16 +30,13 @@ y = 0
 drawing = True
 while drawing:
 
-    # Event loop
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             drawing = False
 
-        # Mouse input
         if event.type == pygame.MOUSEBUTTONDOWN:
             x, y = pygame.mouse.get_pos()
 
-    # Draw
     background.draw()
     draw_sprites(x, y)
     pygame.display.flip()
