@@ -1,11 +1,3 @@
-"""
-LESSON: 6.1 - Functions
-EXERCISE: Code Your Own
-
-TITLE: [Your Title Here]
-DESCRIPTION: [Draw one of two complex procedural shapes at a random location whenever the matching keys are pressed.]
-"""
-
 import random
 import tsk
 import pygame
