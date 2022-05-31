@@ -1,9 +1,3 @@
-"""
-LESSON: 6.1 - Functions
-WARMUP 5
-"""
-
-# Libraries
 import random
 import tsk
 import pygame
@@ -33,19 +27,14 @@ pygame.display.flip()
 drawing = True
 while drawing:
 
-    # Event loop
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             drawing = False
 
-    # Get input
     value = int(input("Enter a number, 1 - 5 or 0 to quit "))
 
-    # Call function here
     draw_food(value)
 
-    # Finish
     pygame.display.flip()
     if value == 0:
         drawing = False
-
