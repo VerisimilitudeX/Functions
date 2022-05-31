@@ -1,8 +1,3 @@
-"""
-LESSON: 6.1 - Functions
-EXERCISE: Following Directions
-"""
-
 #### ---- LIBRARIES ---- ####
 import tsk, random, pygame
 pygame.init()
